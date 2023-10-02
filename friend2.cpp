@@ -20,7 +20,7 @@ void find (test t)
 	}
 	else
 	{
-		cout<<"smallest is: "<<t.y;
+		cout<<"smallest is: "<<t.x;
 	}
 }
 int main()
