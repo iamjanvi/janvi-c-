@@ -11,27 +11,27 @@ class A
 class B: public A
 {
 	public:
-		display();
+		//display();
 		void display()
 		{
 			cout<<"Displaying from B..";
 		}
 };
-class C: public B, public A
+class C: public B
 {
 	public:
-		display();
-		display();
+		//display();
+		//display();
 		void display()
 		{ 
 		cout<<"Displaying from C..";
 		}
 };
 //derived code..
-void main()
+int main()
 {
 	C obj;
-	obj.A::display1();
+	obj.A::display();
 	obj.B::display();
 	obj.C::display();
 	return 0;
