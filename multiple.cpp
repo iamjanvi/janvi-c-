@@ -28,8 +28,8 @@ class C:public A,public B
 	public:
 		dis_c()
 		{
-            dis_a();
-            dis_b();
+           
+          
 			cout<<" c = "<<c<<endl;
 		}
 };
@@ -37,6 +37,8 @@ class C:public A,public B
 int main()
 {
 	C obj;
+  obj.dis_a(); 
+  obj.dis_b();
 	obj.dis_c();
 	return 0;
 }
