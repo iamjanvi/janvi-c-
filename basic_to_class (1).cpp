@@ -1,6 +1,7 @@
-#include<iostream.h>
-#include<conio.h>
-class Time() {
+#include<iostream>
+using namespace std;
+class Time
+{
     private:
         int hh,mm;
     public:
@@ -19,13 +20,12 @@ class Time() {
             cout<<endl<<"Hours :"<<hh<<"\tMinutes :"<<mm;
         }
 };
-void main() {
+int  main() {
     Time T1;
-    int totmin;
-    clrscr();
+    int totmin;
     cout<<"\nEnter total minutes :";
     cin>>totmin;
     T1 = totmin;
     T1.showTime();
-    getch();
+    return 0; 
 }
