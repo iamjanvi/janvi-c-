@@ -1,6 +1,6 @@
-#include<iostream.h>
-#include<conio.h>
-class A() {
+#include<iostream>
+using namespace std;
+class A {
     private:
         int a;
     public:
@@ -14,7 +14,7 @@ class A() {
             cout<<"\na="<<a;
         }
 };
-class B() {
+class B {
     private:
         int b;
     public:
@@ -32,12 +32,11 @@ class B() {
             cout<<"\nb="<<b;
         }
 };
-void main() {
+int main() {
     A objA;
-    B objB;
-    clrscr();
+    B objB;
     objB.getB();
     objA=objB;
     objA.showA();
-    getch();
+    return 0;
 }
