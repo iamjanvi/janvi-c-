@@ -1,6 +1,5 @@
 //overloading binary relational operators using member function and friend function...
-#include<iostream.h>
-#include<conio.h>
+#include<iostream>
 class Distance {
     private :
         int meter, cm;
@@ -15,8 +14,8 @@ class Distance {
         int operator > (Distance t)
         {
             int r,totcm1=0,totcm2=0;
-            totlcm1 = meter * 100+cm;
-            totlcm2 = t.meter*100+t.cm;
+            totcm1 = meter * 100+cm;
+            totcm2 = t.meter*100+t.cm;
             if(totcm1 > totcm2) 
                 return 1;
             else
@@ -25,7 +24,7 @@ class Distance {
         friend int operator < (Distance,Distance);
 };
 int operator < (Distance op1,Distance op2) {
-    int r,totcm1=0;totcm2=0;
+    int r,totcm1=0,totcm2=0;
     totcm1 = op1.meter*100 + op1.cm;
     totcm2 = op2.meter*100 + op2.cm;
     if(totcm1 < totcm2) 
@@ -33,7 +32,7 @@ int operator < (Distance op1,Distance op2) {
     else 
         return 0;
 }
-void main() {
+int main() {
     Distance D1,D2;
     clrscr();
     D1.getDistance();
@@ -48,5 +47,5 @@ void main() {
     else 
         cout<<"\nD2 is small...";
 
-    getch();
+   return 0;
 }
