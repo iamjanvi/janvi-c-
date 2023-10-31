@@ -1,5 +1,5 @@
-#include<iostream.h>
-#include<conio.h>
+#include<iostream>
+using namespace std;
 class B {
     private:
         int b;
@@ -18,7 +18,7 @@ class B {
             return b;
         }
 };
-class A() {
+class A {
     private : 
         int a;
     public:
@@ -32,12 +32,11 @@ class A() {
             cout<<"\nA:"<<a;
         }
 };
-void main() {
+int main() {
     A objA;
     B objB;
-    clrscr();
     objB.getB();
     objA=objB;
     objA.showA();
-    getch();
+    return 0;
 }
