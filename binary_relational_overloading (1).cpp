@@ -35,7 +35,7 @@ int operator < (Distance op1,Distance op2) {
 }
 int main() {
     Distance D1,D2;
-    clrscr();
+   
     D1.getDistance();
     D2.getDistance();
     if(D1 > D2) 
