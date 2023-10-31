@@ -1,5 +1,6 @@
 //overloading binary relational operators using member function and friend function...
-#include<iostream>
+#include<iostream>
+using namespace std;
 class Distance {
     private :
         int meter, cm;
