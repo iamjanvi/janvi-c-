@@ -1,6 +1,6 @@
-#include<iostream.h>
-#include<conio.h>
-class Distance() {
+#include<iostream>
+using namespace std;
+class Distance {
     private:
         int meter,cm;
     public:
@@ -25,12 +25,11 @@ class Distance() {
             cout<<"\nMeter : "<<meter<<"\tCm : "<<cm;
         }
 };
-void main() {
-    Distance D1;
-    clrscr();
+int main() {
+    Distance D1;
     D1.getDistance();
     int totalcm;
     totalcm = int(D1);
     cout<<"\nTotal cm:"<<totalcm;
-    getch();
+    return 0;
 }
