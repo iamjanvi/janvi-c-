@@ -17,7 +17,7 @@ using namespace std;
  void  operator -()
  {
  a=-a;
- b-b;
+ b=-b;
  }
  
  };
