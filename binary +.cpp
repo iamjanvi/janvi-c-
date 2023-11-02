@@ -15,7 +15,7 @@ using namespace std;
  {
  cout<<a<<b<<endl;
  }
- mul operator +(mul);
+ friend mul operator +(mul);
  };
  mul mul ::operator +(mul t)
  {
